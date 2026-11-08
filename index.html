@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="birthday-song.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Floating Music Toggle Button -->
+    <button id="musicToggleBtn" class="music-btn" title="Play/Pause my inner words">🎵 Play My inner words</button>
+
+    <div class="card-container">
+        <h1 class="title">Happy Birthday Darling! 🎉</h1>
+        <p class="subtitle">Wishing you a day filled with happiness and a year filled with joy.</p>
+
+        <!-- Interactive Heart Button to Open Message & Photos -->
+        <div class="heart-trigger-section">
+            <button id="heartBtn" class="heart-btn">
+                <span class="heart-icon">❤️</span> Click to Open My Heart <span class="heart-icon">❤️</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hidden Popup Modal for Big Message and Stacked Photos -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close-btn">&times;</span>
+            
+            <h2 class="modal-title">To My Best Friend 💖</h2>
+            
+            <!-- Your Custom Paragraph Message -->
+            <p class="long-message"> Happy birthday Durga💕.
+                We don't meet daily, and we don't see each other every day, but our friendship is always the exact same. From 8th class to 3rd year B.Tech, we’ve come a long way. 8 long years! 🎓 We have so many unforgettable memories together. Through every phase, high, and low, you’ve been my constant support. Thank you for being my first best friend and understanding me like no one else does. Some people just become a part of who you are, I’ve never forgotten you, and I never will. ❤️
+            </p>
+
+            <!-- Stacked Photos with Names on Top -->
+            <div class="stacked-photos">
+                <div class="photo-wrapper">
+                    <h4 class="photo-title">🎒</h4>
+                    <img src="photo1.jpeg" alt="Memory 1">
+                </div>
+                <div class="photo-wrapper">
+                    <h4 class="photo-title"></h4>✨</h4>
+                    <img src="photo2.jpeg" alt="Memory 2">
+                </div>
+                <div class="photo-wrapper">
+                    <h4 class="photo-title">❤️</h4>
+                    <img src="photo3.jpeg" alt="Memory 3">
+                </div>
+            </div>
+
+            <!-- Next Page Button -->
+            <div style="margin-top: 30px; text-align: center;">
+                <a href="page2.html" class="btn" style="text-decoration: none; display: inline-block;">Next </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
